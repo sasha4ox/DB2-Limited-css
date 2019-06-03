@@ -10,7 +10,7 @@ function serve(){
         }
     });
 
-    gulp.watch("*.sass").on('change', sassI);
+    gulp.watch("*.sass").on('change', sassF);
     gulp.watch("*.html").on('change', browserSync.reload);
 };
 
@@ -21,7 +21,7 @@ function sassI(){
     .pipe(gulp.dest("./"))
     .pipe(browserSync.stream());
 };
-gulp.task(sassI);
+gulp.task(sassF);
 gulp.task(serve);
 
-gulp.task('default', gulp.series(sassI,serve));
+gulp.task('default', gulp.series(sassF,serve));
