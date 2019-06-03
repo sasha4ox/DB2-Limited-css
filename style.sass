@@ -1,0 +1,355 @@
+*
+    padding: 0px
+    margin: 0px
+    box-sizing: border-box
+ul
+    list-style: none outside none
+li
+    list-style: none outside none
+a 
+    text-decoration: none
+
+body
+    background: #ccc
+    font-family: 'Roboto', sans-serif
+    font-family: 'Exo 2', sans-serif
+section
+    width: 1024px
+    height: 768px
+    margin: 0 auto
+    background: #F9FAFC
+    
+nav
+    height: 100%
+    width: 80px
+    background: #01134E
+    display: flex
+    flex-direction: column
+    float: left
+.logo-wrapper
+    margin: 18px auto
+    width: 35px
+    height: 35px
+    cursor: pointer
+.icons-wrapper
+    margin: auto
+    width: 20px
+    height: 20px
+    
+.nav-main>ul>li
+    height: 48px
+    display: flex
+    position: relative
+.nav-main>ul>li:hover .icons-wrapper>svg>path
+    fill: white
+    fill-opacity: 1
+.active>svg>path
+    fill: white
+    fill-opacity: 1
+.active::before
+    content: ""
+    position: absolute
+    width: 4px
+    height: 48px
+    background:#0AD69C
+    top: 0
+    left: 0
+.counter
+    width: 19px
+    height: 19px
+    background: #2A74DB
+    position: absolute
+    top: 7px
+    left: 41px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    color: white
+    font-family: 'Roboto', sans-serif
+.nav-top
+    width: 944px
+    height: 61px
+    background: #FFFFFF
+    display: flex
+    flex-direction: row
+    float: left
+    margin-bottom: 42px
+.breadcrumbs
+    font-family: 'Roboto',sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 15px
+    letter-spacing: 0.685714px
+    height: 100%
+    width: 60%
+    margin-left: 28px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+.breadcrumbs>a
+    margin: 0 12px
+.nav-top-user
+    height: 100%
+    width: 40%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    cursor: pointer
+.nav-top-user>p
+    margin: 0 9px
+.nav-top-user>svg:last-child
+    margin-right: 50px
+.main-user
+    width: 22px
+    height: 22px
+    background: url(./img/main-user.svg)  
+main
+    width: 85%
+    height: 72%
+    display: flex
+    margin: 0 auto 40px
+.main-messages-warapper
+    height: 100%
+    width: 35%
+.main-area-wrapper
+    height: 100%
+    width: 65%
+    display: flex
+    flex-direction: column
+.main-messages-message
+    width: 100%
+    height: 16.6666666667%
+    display: flex
+    position: relative
+    background: #F7F9FC
+    cursor: pointer
+#userImg1
+    width: 50px
+    height: 50px
+    background: url(./img/miranda.svg)
+    margin: 20px
+#userImg2
+    width: 50px
+    height: 50px
+    background: url(./img/barry.svg)
+    margin: 20px
+#userImg3
+    width: 50px
+    height: 50px
+    background: url(./img/stacey.svg)
+    margin: 20px
+#userImg4
+    width: 50px
+    height: 50px
+    background: url(./img/michael.svg)
+    margin: 20px
+#userImg5
+    width: 50px
+    height: 50px
+    background: url(./img/johny.svg)
+    margin: 20px
+#userImg6
+    width: 50px
+    height: 50px
+    background: url(./img/staceydosh.svg)
+    margin: 20px 
+.text-wrapper
+    margin-top: 23px
+    
+.text-wrapper>h3
+    font-family: 'Exo 2', sans-serif
+    font-size: 16px
+    line-height: 19px
+    color: #01134E
+    position: relative
+    display: inline-block
+.text-wrapper>p
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
+    line-height: 18px
+    color: #252F48
+    opacity: 0.43
+    margin-top: 5px
+.online::before
+    content: ""
+    background: #0AD69C
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    position: absolute
+    top: -2px
+    right: -8px
+.soundMark::after
+    content: url(./img/sound.svg)
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    position: absolute
+    top: 1px
+    right: -20px
+.time
+    position: absolute
+    top: 7px
+    right: 7px
+    font-family: 'Roboto', sans-serif
+    color: #9BA0AD
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.428571px
+.readed
+    box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06)
+    border-radius: 4px
+    background: #FFFFFF
+.opened
+    background: #FFFFFF
+    box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2), 0px -5px 5px rgba(224, 224, 224, 0.15)
+    z-index: 10
+.search-wrapper
+    height: 8.92857142857%
+    width: 100%
+    background: #FFFFFF
+    box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06)
+    border-radius: 4px
+    display: flex
+    align-items: center
+
+.text-area
+    height: 80.3571428571%
+    width: 100%
+    background: #FFFFFF
+    box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06)
+    border-radius: 4px
+    overflow-y: auto
+    display: flex
+    flex-direction: column
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
+    line-height: 20px
+    color: #222428
+
+::-webkit-scrollbar
+    width: 4px
+
+::-webkit-scrollbar-thumb
+    border-color: #777
+    background-color: #E5E5E5
+    border-radius: 4px
+    height: 54.5px
+    width: 4px
+::-webkit-scrollbar-track
+    background: #F8F9FB
+
+
+    
+.button
+    background: url(./img/search.svg) no-repeat
+    cursor: pointer
+    border: none
+    margin: 18px
+.search
+    border: none
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
+    line-height: 18px 
+    letter-spacing: 0.5px
+    color: #252F48
+    opacity: 0.2
+    width: 70%
+    height: 80%
+.userImgRes
+    width: 36px
+    height: 36px
+    background: url(./img/stacey2.svg)
+    margin: 20px 20px 0px 20px
+    display: flex
+    align-self: flex-end
+.response
+    max-width: 400px
+    display: flex
+.userTextRes
+    width: 300px
+    background: #F7F9FC
+    border-radius: 5px
+    padding: 13px
+    position: relative
+    margin-top: 20px
+
+.userTextRes::before
+    content: url(./img/vector.svg)
+    position: absolute
+    bottom: -6px
+    left: -14px
+.answer
+    max-width: 400px
+    display: flex
+    justify-content: flex-end
+    margin-left: 140px
+    margin-top: 20px
+.textRes
+    width: 300px
+    background: #F7F9FC
+    border-radius: 5px
+    padding: 13px
+    position: relative
+.textRes::after
+    content: url(./img/vector1.svg)
+    position: absolute
+    bottom: -6px
+    right: -14px
+.textTime
+    position: absolute
+    bottom: 9px
+    right: 9px
+    font-family: 'Roboto', sans-serif
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.428571px
+    color: #9BA0AD
+.day
+    font-family: Exo 2
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.5px
+    color: #CACED9
+    display: flex
+    margin-top: 20px
+    justify-content: center
+.write-area
+    height: 10.7142857143%
+    width: 100%
+    background: #FFFFFF
+    box-shadow: 0px 0px 20px rgba(153, 163, 174, 0.146541)
+    display: flex
+    align-items: center
+.buttonSmile
+    background: url(./img/smile.svg) no-repeat
+    cursor: pointer
+    border: none
+    margin-right: 24px
+    width: 19px
+    height: 19px
+.buttonfile
+    background: url(./img/file.svg) no-repeat
+    cursor: pointer
+    border: none
+    width: 20px
+    height: 20px
+.send
+    width: 36.5px
+    height: 36.5px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #FFFFFF
+    box-shadow: 0px 0px 15px rgba(153, 163, 174, 0.259256)
+    border-radius: 7px
+    margin-left: 30px
+.buttonSend
+    background: url(./img/send.svg) no-repeat
+    cursor: pointer
+    border: none
+    width: 20px
+    height: 20px
